@@ -66,7 +66,7 @@ public class Main {
     }
 
     public static void sendRequest(OrderRequest orderRequest){
-        boolean result = false;
+        boolean result ;
         result = branchManagerHandler.handleRequest(orderRequest);
         if (result){
             return;
@@ -81,6 +81,6 @@ public class Main {
         }
         result = presidentHandler.handleRequest(orderRequest);
         if (!result)
-            System.out.println("Order amount over 300,000, please contact customer service for assistant.");
+            System.out.println("Order amount over authorization limit, please contact customer service for assistant.");
     }
 }

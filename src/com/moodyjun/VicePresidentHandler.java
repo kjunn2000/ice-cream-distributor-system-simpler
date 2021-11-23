@@ -5,7 +5,7 @@ public class VicePresidentHandler {
         if(orderRequest.getTotalAmount() > 100000){
             return false;
         }
-        System.out.println("Approved for order request. "+ orderRequest.toString());
+        System.out.println("\nOrder is under RM100,000-> Approved \n" + orderRequest);
         return true;
     }
 }

@@ -5,7 +5,7 @@ public class RegionalDirectorHandler {
         if(orderRequest.getTotalAmount() > 50000){
             return false;
         }
-        System.out.println("Approved for order request. "+ orderRequest.toString());
+        System.out.println("\nOrder is under RM50,000-> Approved \n" + orderRequest);
         return true;
     }
 }

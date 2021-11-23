@@ -5,7 +5,7 @@ public class BranchManagerHandler {
         if(orderRequest.getTotalAmount() > 10000){
             return false;
         }
-        System.out.println("Approved for order request. "+ orderRequest.toString());
+        System.out.println("\nOrder is under RM10,000-> Approved \n" + orderRequest);
         return true;
     }
 }

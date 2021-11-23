@@ -48,9 +48,9 @@ public class OrderRequest {
     @Override
     public String toString() {
         return "\nOrderRequest\n" +
-                "orderId='" + orderId + '\n' +
-                ", orderItem=" + orderItem.getName()+ '\n' +
-                ", itemQuantity=" + itemQuantity + '\n' +
-                ", totalAmount=" + totalAmount + '\n';
+                "Order Id -> " + orderId + '\n' +
+                "Order Item -> " + orderItem.getName()+ '\n' +
+                "Item Quantity -> " + itemQuantity + '\n' +
+                "Total Amount -> " + totalAmount + '\n';
     }
 }
