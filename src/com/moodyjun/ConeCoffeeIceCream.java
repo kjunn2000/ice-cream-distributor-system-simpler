@@ -1,8 +1,8 @@
 package com.moodyjun;
 
 public class ConeCoffeeIceCream extends IceCreamCone{
-    private final String name = "Coffee (Cone)";
-    private final Double price = 5.00;
+    private String name = "Coffee (Cone)";
+    private Double price = 5.00;
 
     @Override
     public String getName() {

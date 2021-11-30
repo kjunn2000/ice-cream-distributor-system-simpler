@@ -69,6 +69,25 @@ public class Client {
         return null;
     }
 
+    public static void sendRequest(OrderRequest orderRequest){
+        boolean result ;
+        result = seniorExecutiveHandler.handleRequest(orderRequest);
+        if (result){
+            return;
+        }
+        result = branchManagerHandler.handleRequest(orderRequest);
+        if (result){
+            return;
+        }
+        result = generalManagerHandler.handleRequest(orderRequest);
+        if (result){
+            return;
+        }
+        result = directorHandler.handleRequest(orderRequest);
+        if (!result)
+            System.out.println("Order amount over authorization limit, please contact customer service for assistant.");
+    }
+
     public static void configureRequestHandler() {
         seniorExecutiveHandler = new SeniorExecutiveHandler();
         branchManagerHandler = new BranchManagerHandler();
@@ -92,22 +111,4 @@ public class Client {
         System.out.print("Enter choice (q for exit): ");
     }
 
-    public static void sendRequest(OrderRequest orderRequest){
-        boolean result ;
-        result = seniorExecutiveHandler.handleRequest(orderRequest);
-        if (result){
-            return;
-        }
-        result = branchManagerHandler.handleRequest(orderRequest);
-        if (result){
-            return;
-        }
-        result = generalManagerHandler.handleRequest(orderRequest);
-        if (result){
-            return;
-        }
-        result = directorHandler.handleRequest(orderRequest);
-        if (!result)
-            System.out.println("Order amount over authorization limit, please contact customer service for assistant.");
-    }
 }

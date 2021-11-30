@@ -1,8 +1,8 @@
 package com.moodyjun;
 
 public class StickRaspberryIceCream extends IceCreamStick{
-    private final String name = "Raspberry (Stick)";
-    private final Double price = 6.00;
+    private String name = "Raspberry (Stick)";
+    private Double price = 6.00;
 
     @Override
     public String getName() {
