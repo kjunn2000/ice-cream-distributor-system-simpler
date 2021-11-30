@@ -1,6 +1,6 @@
 package com.moodyjun;
 
-public class StickCoffeeIceCream extends IceCreamCone{
+public class StickCoffeeIceCream extends IceCreamStick{
     private final String name = "Coffee (Stick)";
     private final Double price = 6.00;
 

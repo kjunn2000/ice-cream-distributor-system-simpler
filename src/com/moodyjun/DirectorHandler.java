@@ -1,6 +1,6 @@
 package com.moodyjun;
 
-public class PresidentHandler {
+public class DirectorHandler {
     public boolean handleRequest(OrderRequest orderRequest){
         if(orderRequest.getTotalAmount() > 300000){
             return false;

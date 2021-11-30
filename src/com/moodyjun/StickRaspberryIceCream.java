@@ -1,6 +1,6 @@
 package com.moodyjun;
 
-public class StickRaspberryIceCream extends IceCreamCone{
+public class StickRaspberryIceCream extends IceCreamStick{
     private final String name = "Raspberry (Stick)";
     private final Double price = 6.00;
 

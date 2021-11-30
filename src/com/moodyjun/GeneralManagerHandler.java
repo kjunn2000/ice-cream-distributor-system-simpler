@@ -1,6 +1,6 @@
 package com.moodyjun;
 
-public class VicePresidentHandler {
+public class GeneralManagerHandler {
     public boolean handleRequest(OrderRequest orderRequest){
         if(orderRequest.getTotalAmount() > 100000){
             return false;
